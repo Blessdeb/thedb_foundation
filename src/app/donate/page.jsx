@@ -1,8 +1,10 @@
 "use client";
 
+import Button from "../../lib/components/button";
 import { useEffect } from "react";
 import { MainLayout } from "@/lib/components/layout";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DonatePage() {
   useEffect(() => {
@@ -39,7 +41,7 @@ export default function DonatePage() {
               
               min-[1153px]:w-[570px]"
               >
-                <iframe
+                {/* <iframe
                   src="https://donorbox.org/embed/the-deborah-blessed-foundation?language=en-us"
                   name="donorbox"
                   allow="payment"
@@ -54,7 +56,38 @@ export default function DonatePage() {
                     minWidth: "250px",
                     maxHeight: "none!important",
                   }}
-                ></iframe>
+                ></iframe> */}
+
+                <div className="w-full border border-solid border-[#ddd] flex flex-col  items-center h-full pb-16">
+                  <div className="w-full flex justify-center items-center h-[70px] bg-[#F25353]">
+                    <Image
+                      src={"/image/db-logo-white.png"}
+                      alt="Cover Image"
+                      className="object-cover w-[80px] filter"
+                      width={2740}
+                      height={2740}
+                      quality={75}
+                    />
+                  </div>
+
+                  <p className="mt-8 w-[80%] text-center">
+                    {" "}
+                    Each and every donation to the DBF helps change the world.
+                  </p>
+
+                  <div className="pl-4 w-full mt-10 pr-4 ">
+                    <hr className="w-full  h-[1px] bg-[#ddd]" />
+                  </div>
+
+                  <Button className="btn-gradient mt-10 ">
+                    <Link
+                      target="_blank"
+                      href="https://paystack.com/pay/deborahbless"
+                    >
+                      Make Donation
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
             <div>
