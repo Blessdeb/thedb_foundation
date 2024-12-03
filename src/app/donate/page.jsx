@@ -79,7 +79,7 @@ export default function DonatePage() {
                     <hr className="w-full  h-[1px] bg-[#ddd]" />
                   </div>
 
-                  <Button className="btn-gradient mt-10 ">
+                  <Button className="btn-gradient mt-9 ">
                     <Link
                       target="_blank"
                       href="https://paystack.com/pay/deborahbless"
