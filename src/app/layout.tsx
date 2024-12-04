@@ -58,14 +58,14 @@ export default function RootLayout({
     description:
       "Our mission at The Deborah Bless Foundation is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive.",
     sameAs: [
-      "https://www.facebook.com/yourpage",
-      "https://www.twitter.com/yourpage",
-      "https://www.instagram.com/yourpage",
+      "https://www.facebook.com/profile.php?id=61558369198106",
+      "https://twitter.com/Dblessdevotion",
+      "https://www.instagram.com/dblessdevotion",
     ],
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+1234567890",
+        telephone: "+234-9016 292 9162",
         contactType: "Customer Support",
         areaServed: "Global",
         availableLanguage: ["English"],
