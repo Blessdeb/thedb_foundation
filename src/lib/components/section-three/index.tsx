@@ -37,6 +37,7 @@ export default function SectionThree() {
         <div className="relative flex flex-col items-center gap-5 pr-0  min-[571px]:pr-[80px] ">
           <div className="">
             <object
+              aria-label="svg"
               className="w-[34px] absolute 
               min-[571px]:top-0 top-[-40px] 
               min-[571px]:left-[-50px] left-[-10px]"
@@ -51,6 +52,7 @@ export default function SectionThree() {
             </p>
 
             <object
+              aria-label="svg"
               className="w-[34px] absolute 
               min-[571px]:right-[50px] right-[10px] -scale-x-100"
               type="image/svg+xml"

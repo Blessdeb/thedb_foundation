@@ -38,6 +38,7 @@ export default function Home() {
           </div>
           <div className="w-full mt-32  relative">
             <Link
+              aria-label="donate page"
               href="/donate"
               className="btn-gradient cursor-pointer mx-auto my-0 inset-x-0 absolute top-[-90px] rounded-full w-[150px] h-[150px] min-[890px]:w-[160px] min-[890px]:h-[160px] flex flex-col z-20 justify-center items-center border-[8px] 
           min-[890px]:border-[8px] border-solid border-white"
@@ -47,6 +48,7 @@ export default function Home() {
                 <span className="flex gap-2">
                   Now
                   <object
+                    aria-label="svg"
                     className="w-[32px] pointer-events-none"
                     type="image/svg+xml"
                     data={"/svg/arrow.svg"}
@@ -63,12 +65,14 @@ export default function Home() {
 
           <div className=" mt-[4rem]  min-[1055px]:mt-[11rem] 3xl:pr-[17rem] 3xl:pl-[17rem] min-[1536px]:pl-[14rem] min-[1536px]:pr-[14rem] min-[1332px]:pl-[8rem] min-[1332px]:pr-[8rem] pl-[2rem] pr-[2rem] relative w-full ">
             <object
+              aria-label="svg"
               className="min-[582px]:w-[44px] w-[38px] z-0 opacity-50 absolute min-[694px]:left-[70px] top-[-48px]  min-[582px]:top-[-60px] min-[694px]:top-0 left-[20px]"
               type="image/svg+xml"
               data={"/svg/dash-sketch.svg"}
             ></object>
             <FirstSection />
             <object
+              aria-label="svg"
               className="w-[44px] z-0 opacity-50 absolute  min-[1332px]:top-[80px] 
             
             min-[694px]:top-[590px]
@@ -81,17 +85,20 @@ export default function Home() {
 
           <div className=" w-full pt-[12rem] 3xl:pr-[17rem] 3xl:pl-[17rem] relative  min-[1536px]:pl-[14rem] min-[1536px]:pr-[14rem] min-[1332px]:pl-[8rem] min-[1332px]:pr-[8rem] pl-[2rem] pr-[2rem] mt-[10rem] min-[1055px]:mt-[14rem] bg-[#ef52520d] h-fit pb-16">
             <object
+              aria-label="svg"
               className="w-[44px] opacity-50 z-0 absolute bottom-[30px] min-[1332px]:bottom-[130px] left-[70px]"
               type="image/svg+xml"
               data={"/svg/dash-sketch.svg"}
             ></object>
             <SectionTwo />
             <object
+              aria-label="svg"
               className="w-[154px] opacity-68 absolute bottom-[240px] right-[40px] z-10"
               type="image/svg+xml"
               data={"/svg/flower-sketch.svg"}
             ></object>
             <object
+              aria-label="svg"
               className="w-[94px] absolute min-[1018px]:top-[110px] top-[18px] right-[70px]"
               type="image/svg+xml"
               data={"/svg/sun-sketch.svg"}

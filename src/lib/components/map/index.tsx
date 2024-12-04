@@ -2,6 +2,7 @@ export default function MakeMap() {
   return (
     <div className="relative  h-fit w-fit">
       <object
+        aria-label="svg"
         className="min-[778px]:w-[508px] w-[310px]"
         type="image/svg+xml"
         data={"/svg/NG-map.svg"}

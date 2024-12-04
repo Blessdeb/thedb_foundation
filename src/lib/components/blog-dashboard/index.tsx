@@ -113,6 +113,7 @@ export default function Hold({ onNewBlogClick, onBlogClick }: HoldProps) {
             <p className="mt-5 gap-3 flex items-center text-[#F25353]">
               Learn More
               <object
+                aria-label="svg"
                 className="w-[24px]"
                 type="image/svg+xml"
                 data={"/svg/arrow.svg"}
