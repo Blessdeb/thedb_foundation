@@ -24,7 +24,9 @@ export default function FirstSection() {
           to inspire change that lasts
         </p>
         <Button className="mt-10 w-[142px] h-[49px] btn-gradient">
-          <Link href="/donate">Donate Now</Link>
+          <Link aria-label="donate page" href="/donate">
+            Donate Now
+          </Link>
         </Button>
       </div>
 
@@ -35,6 +37,7 @@ export default function FirstSection() {
       >
         <div className="">
           <object
+            aria-label="suitcase"
             className="w-[51px]"
             type="image/svg+xml"
             data={"/svg/suitcase.svg"}
@@ -44,10 +47,15 @@ export default function FirstSection() {
             We believe that skills lead to empowerment. With a focus on
             vocation...
           </p>
-          <Link className="group  relative" href="/about">
+          <Link
+            aria-label="about page"
+            className="group  relative"
+            href="/about"
+          >
             <p className="mt-[15px] flex items-center text-[#F25353]">
               <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
               <object
+                aria-label="arrow"
                 className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                 type="image/svg+xml"
@@ -60,6 +68,7 @@ export default function FirstSection() {
 
         <div className="">
           <object
+            aria-label="svg"
             className="w-[51px]"
             type="image/svg+xml"
             data={"/svg/income.svg"}
@@ -69,10 +78,15 @@ export default function FirstSection() {
             We aim to break the cycle of poverty by providing individuals with
             income...
           </p>
-          <Link className="group  relative" href="/about">
+          <Link
+            aria-label="about page"
+            className="group  relative"
+            href="/about"
+          >
             <p className="mt-[15px] flex items-center text-[#F25353]">
               <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
               <object
+                aria-label="arrow"
                 className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                 type="image/svg+xml"
@@ -85,6 +99,7 @@ export default function FirstSection() {
 
         <div className="">
           <object
+            aria-label="food"
             className="w-[51px]"
             type="image/svg+xml"
             data={"/svg/food.svg"}
@@ -96,10 +111,15 @@ export default function FirstSection() {
             We recognize that the first years of life are crucial for a
             child’s...
           </p>
-          <Link className="group  relative" href="/about">
+          <Link
+            aria-label="about page"
+            className="group  relative"
+            href="/about"
+          >
             <p className="mt-[15px] flex items-center text-[#F25353]">
               <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
               <object
+                aria-label="arrow"
                 className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                 type="image/svg+xml"
@@ -112,6 +132,7 @@ export default function FirstSection() {
 
         <div className="">
           <object
+            aria-label="church"
             className="w-[51px]"
             type="image/svg+xml"
             data={"/svg/church.svg"}
@@ -123,10 +144,15 @@ export default function FirstSection() {
             Sharing hope and faith is a vital part of our mission. Through
             Gospel...
           </p>
-          <Link className="group  relative" href="/about">
+          <Link
+            aria-label="about page"
+            className="group  relative"
+            href="/about"
+          >
             <p className="mt-[15px] flex items-center text-[#F25353]">
               <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
               <object
+                aria-label="svg"
                 className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                 type="image/svg+xml"

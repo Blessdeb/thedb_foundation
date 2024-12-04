@@ -43,21 +43,29 @@ function MainLayout({ children }: MainLayoutProps) {
           </div>
           <div className="w-[100px] text-sm ">
             <div className="relative group flex justify-center w-full main-link">
-              <Link href="/about">About us</Link>
+              <Link aria-label="about page" href="/about">
+                About us
+              </Link>
               <div className="absolute flex justify-center items-end pb-2 bg-white h-[45px] w-full sub-link top-[20px]">
-                <Link href="/team">Team</Link>
+                <Link aria-label="team page" href="/team">
+                  Team
+                </Link>
               </div>
 
               <hr className="w-full h-1 hidden group-hover:block absolute bottom-[-48px]  bg-red-500" />
             </div>
           </div>
           <div className="w-[100px] relative group text-sm flex justify-center">
-            <Link href="/impact">Our Impact</Link>
+            <Link aria-label="impact page" href="/impact">
+              Our Impact
+            </Link>
             <hr className="w-full h-1 hidden group-hover:block absolute bottom-[-25px]  bg-red-500" />
           </div>
           <div className="w-[100px] text-sm ">
             <div className="relative group flex justify-center w-full main-link">
-              <Link href="/donate">Donate</Link>
+              <Link aria-label="donate page" href="/donate">
+                Donate
+              </Link>
               {/* <div className="absolute hidden justify-center items-end pb-2 bg-white h-[45px] w-full sub-link top-[20px]">
                 <Link href="/partner">Partner</Link>
               </div> */}
@@ -66,7 +74,9 @@ function MainLayout({ children }: MainLayoutProps) {
             </div>
           </div>
           <div className="w-[100px] relative group text-sm flex justify-center">
-            <Link href="/blog">Blog</Link>
+            <Link aria-label="blog page" href="/blog">
+              Blog
+            </Link>
 
             <hr className="w-full h-1 hidden group-hover:block absolute bottom-[-25px]  bg-red-500" />
           </div>
@@ -101,13 +111,25 @@ function MainLayout({ children }: MainLayoutProps) {
             >
               About Us
             </p>
-            <Link href="/impact" onClick={handleMenuToggle}>
+            <Link
+              aria-label="impact page"
+              href="/impact"
+              onClick={handleMenuToggle}
+            >
               <p className="text-xl mb-4">Our Impact</p>
             </Link>
-            <Link href="/donate" onClick={handleMenuToggle}>
+            <Link
+              aria-label="donate page"
+              href="/donate"
+              onClick={handleMenuToggle}
+            >
               <p className="text-xl mb-4">Donate</p>
             </Link>
-            <Link href="/blog" onClick={handleMenuToggle}>
+            <Link
+              aria-label="blog page"
+              href="/blog"
+              onClick={handleMenuToggle}
+            >
               <p className="text-xl">Blog</p>
             </Link>
           </div>
@@ -121,10 +143,18 @@ function MainLayout({ children }: MainLayoutProps) {
               >
                 ←
               </button>
-              <Link href="/about" onClick={handleMenuToggle}>
+              <Link
+                aria-label="about page"
+                href="/about"
+                onClick={handleMenuToggle}
+              >
                 <p className="text-xl mb-4">About Us</p>
               </Link>
-              <Link href="/team" onClick={handleMenuToggle}>
+              <Link
+                aria-label="team page"
+                href="/team"
+                onClick={handleMenuToggle}
+              >
                 <p className="text-xl">Team</p>
               </Link>
             </div>
@@ -139,7 +169,11 @@ function MainLayout({ children }: MainLayoutProps) {
               >
                 ←
               </button>
-              <Link href="/donate" onClick={handleMenuToggle}>
+              <Link
+                aria-label="donate page"
+                href="/donate"
+                onClick={handleMenuToggle}
+              >
                 <p className="text-xl mb-4">Donate</p>
               </Link>
               <Link href="/partner" onClick={handleMenuToggle}>
@@ -195,6 +229,7 @@ function MainLayout({ children }: MainLayoutProps) {
                 >
                   <div className="ring-1 rounded-full p-3 ring-white ">
                     <object
+                      aria-label="svg"
                       className="w-[18px] pointer-events-none"
                       type="image/svg+xml"
                       data={"/svg/instagram.svg"}
@@ -207,6 +242,7 @@ function MainLayout({ children }: MainLayoutProps) {
                 >
                   <div className="ring-1 rounded-full p-3 ring-white ">
                     <object
+                      aria-label="svg"
                       className="w-[18px] pointer-events-none"
                       type="image/svg+xml"
                       data={"/svg/facebook.svg"}
@@ -219,6 +255,7 @@ function MainLayout({ children }: MainLayoutProps) {
                 >
                   <div className="ring-1 rounded-full p-3 ring-white ">
                     <object
+                      aria-label="svg"
                       className="w-[18px] pointer-events-none"
                       type="image/svg+xml"
                       data={"/svg/tiktok.svg"}
@@ -235,19 +272,19 @@ function MainLayout({ children }: MainLayoutProps) {
               <div className=" flex w-[99px] flex-col gap-2 text-white">
                 <h1 className="text-lg w-[99px] font-semibold">Short Links</h1>
 
-                <Link href="/blog">
+                <Link aria-label="blog page" href="/blog">
                   <h1 className="text-sm  font-normal">Blog</h1>
                 </Link>
-                <Link href="/about">
+                <Link aria-label="about page" href="/about">
                   <h1 className="text-sm font-normal">About</h1>
                 </Link>
-                <Link href="/impact">
+                <Link aria-label="impact page" href="/impact">
                   <h1 className="text-sm  font-normal">Impact</h1>
                 </Link>
-                <Link href="/team">
+                <Link aria-label="team page" href="/team">
                   <h1 className="text-sm  font-normal">Team</h1>
                 </Link>
-                <Link href="/donate">
+                <Link aria-label="donate page" href="/donate">
                   <h1 className="text-sm  font-normal">Donate</h1>
                 </Link>
               </div>
@@ -256,6 +293,7 @@ function MainLayout({ children }: MainLayoutProps) {
                 <h1 className="text-lg font-semibold">Contact us</h1>
                 <p className="flex font-normal text-sm flex-row gap-3">
                   <object
+                    aria-label="svg"
                     className="w-[24px]"
                     type="image/svg+xml"
                     data={"/svg/location.svg"}
@@ -264,6 +302,7 @@ function MainLayout({ children }: MainLayoutProps) {
                 </p>
                 <p className="flex mt-2 text-sm  font-normal flex-row gap-3">
                   <object
+                    aria-label="svg"
                     className="w-[24px]"
                     type="image/svg+xml"
                     data={"/svg/mail.svg"}
@@ -272,6 +311,7 @@ function MainLayout({ children }: MainLayoutProps) {
                 </p>
                 <p className="flex mt-2 text-sm  font-normal flex-row gap-3">
                   <object
+                    aria-label="svg"
                     className="w-[24px]"
                     type="image/svg+xml"
                     data={"/svg/phone.svg"}

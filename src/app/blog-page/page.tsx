@@ -13,7 +13,9 @@ export default function BlogPage() {
         </div>
         <div className="mt-[4rem]  min-[1055px]:mt-[4rem] 3xl:pr-[17rem] 3xl:pl-[17rem] min-[1536px]:pl-[14rem] min-[1536px]:pr-[14rem] min-[1332px]:pl-[8rem] min-[1332px]:pr-[8rem] pl-[2rem] pr-[2rem] relative w-full">
           <div className="w-full">
-            <Link href="/blog">Go Back</Link>
+            <Link aria-label="blog page" href="/blog">
+              Go Back
+            </Link>
             <div className="w-full mt-[3rem] p-3 min-[1093px]:h-[690px] h-[450px] shadow-[2px_6px_27px_-6px_rgba(0,0,0,0.3)] bg-white">
               <Image
                 src={"/image/image-six.png"}
@@ -103,21 +105,25 @@ export default function BlogPage() {
                 <h1 className="font-medium">SHARE THIS ARTICLE</h1>
                 <div className="flex mt-6 gap-5 flex-row">
                   <object
+                    aria-label="svg"
                     className="w-[34px]"
                     type="image/svg+xml"
                     data={"/svg/facebook.svg"}
                   ></object>
                   <object
+                    aria-label="svg"
                     className="w-[34px]"
                     type="image/svg+xml"
                     data={"/svg/instagram.svg"}
                   ></object>
                   <object
+                    aria-label="svg"
                     className="w-[34px]"
                     type="image/svg+xml"
                     data={"/svg/X.svg"}
                   ></object>
                   <object
+                    aria-label="svg"
                     className="w-[34px]"
                     type="image/svg+xml"
                     data={"/svg/link.svg"}
@@ -163,6 +169,7 @@ export default function BlogPage() {
               >
                 <div className="">
                   <object
+                    aria-label="svg"
                     className="w-[51px]"
                     type="image/svg+xml"
                     data={"/svg/suitcase.svg"}
@@ -174,6 +181,7 @@ export default function BlogPage() {
                   <p className="mt-[15px] gap-3 flex items-center text-[#F25353]">
                     Learn More
                     <object
+                      aria-label="svg"
                       className="w-[24px]"
                       type="image/svg+xml"
                       data={"/svg/arrow.svg"}
@@ -183,6 +191,7 @@ export default function BlogPage() {
 
                 <div className="">
                   <object
+                    aria-label="svg"
                     className="w-[51px]"
                     type="image/svg+xml"
                     data={"/svg/income.svg"}
@@ -194,6 +203,7 @@ export default function BlogPage() {
                   <p className="mt-[15px] gap-3 flex items-center text-[#F25353]">
                     Learn More
                     <object
+                      aria-label="svg"
                       className="w-[24px]"
                       type="image/svg+xml"
                       data={"/svg/arrow.svg"}
@@ -203,6 +213,7 @@ export default function BlogPage() {
 
                 <div className="">
                   <object
+                    aria-label="svg"
                     className="w-[51px]"
                     type="image/svg+xml"
                     data={"/svg/church.svg"}
@@ -214,6 +225,7 @@ export default function BlogPage() {
                   <p className="mt-[15px] gap-3 flex items-center text-[#F25353]">
                     Learn More
                     <object
+                      aria-label="svg"
                       className="w-[24px]"
                       type="image/svg+xml"
                       data={"/svg/arrow.svg"}

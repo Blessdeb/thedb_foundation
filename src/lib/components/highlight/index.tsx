@@ -133,10 +133,15 @@ export default function Highlight() {
             __html: getPreviewContent(highlight.content.html, 180),
           }}
         ></div>
-        <Link className="group  relative" href={`/blog/${highlight.id}`}>
+        <Link
+          className="group  relative"
+          aria-label="blog page"
+          href={`/blog/${highlight.id}`}
+        >
           <p className="mt-[15px] flex items-center text-[#F25353]">
             <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
             <object
+              aria-label="svg"
               className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
               type="image/svg+xml"

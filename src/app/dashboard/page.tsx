@@ -115,6 +115,7 @@ export default function Dashboard() {
           href="/dashboard"
         >
           <object
+            aria-label="svg"
             className="w-[20px]"
             type="image/svg+xml"
             data={"/svg/message.svg"}
@@ -126,6 +127,7 @@ export default function Dashboard() {
           className="text-sm hover:bg-[#e8ebec] rounded-md h-[40px] w-full pl-3 flex gap-2 items-center mt-4"
         >
           <object
+            aria-label="svg"
             className="w-[20px]"
             type="image/svg+xml"
             data={"/svg/logout.svg"}

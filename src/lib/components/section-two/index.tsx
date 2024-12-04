@@ -54,7 +54,9 @@ export default function SectionTwo() {
             programs to our on-the-ground initiatives.
           </p>
           <Button className="mt-10 w-[142px] h-[49px] btn-gradient">
-            <Link href="/about">Learn More</Link>
+            <Link aria-label="about page" href="/about">
+              Learn More
+            </Link>
           </Button>
         </div>
       </div>
@@ -82,10 +84,11 @@ export default function SectionTwo() {
             to creating lasting change in the lives of those who need it most.
             Want to find out how you can be part of the team?
           </p>
-          <Link className="group  relative" href="/team">
+          <Link aria-label="team page" className="group  relative" href="/team">
             <p className="mt-[15px] flex items-center text-[#F25353]">
               <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
               <object
+                aria-label="svg"
                 className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                 type="image/svg+xml"

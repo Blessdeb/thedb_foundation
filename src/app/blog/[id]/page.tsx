@@ -69,7 +69,9 @@ export default function BlogPage() {
       {blog ? (
         <div className="w-full relative min-[1161px]:pb-[8rem] pb-[18rem]">
           <div className="mt-[4rem] min-[1055px]:mt-[4rem] 3xl:pr-[17rem] 3xl:pl-[17rem] min-[1536px]:pl-[14rem] min-[1536px]:pr-[14rem] min-[1332px]:pl-[8rem] min-[1332px]:pr-[8rem] pl-[2rem] pr-[2rem] relative w-full">
-            <Link href="/blog">Go Back</Link>
+            <Link aria-label="blog page" href="/blog">
+              Go Back
+            </Link>
             <div className="w-full mt-[3rem] min-[1093px]:h-[690px] h-[450px] p-3 shadow-[2px_6px_27px_-6px_rgba(0,0,0,0.3)] bg-white">
               <Image
                 src={blog.imageURL}
@@ -126,6 +128,7 @@ export default function BlogPage() {
                 >
                   <div>
                     <object
+                      aria-label="svg"
                       className="w-[51px]"
                       type="image/svg+xml"
                       data={"/svg/suitcase.svg"}
@@ -141,6 +144,7 @@ export default function BlogPage() {
                       <p className="mt-[15px] flex items-center text-[#F25353]">
                         <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
                         <object
+                          aria-label="svg"
                           className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                           type="image/svg+xml"
@@ -156,6 +160,7 @@ export default function BlogPage() {
 
                   <div className="">
                     <object
+                      aria-label="svg"
                       className="w-[51px]"
                       type="image/svg+xml"
                       data={"/svg/income.svg"}
@@ -164,10 +169,15 @@ export default function BlogPage() {
                       Support DBF
                     </h1>
 
-                    <Link className="group  relative" href="/donate">
+                    <Link
+                      aria-label="donate page"
+                      className="group  relative"
+                      href="/donate"
+                    >
                       <p className="mt-[15px] flex items-center text-[#F25353]">
                         <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
                         <object
+                          aria-label="svg"
                           className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                           type="image/svg+xml"
@@ -183,6 +193,7 @@ export default function BlogPage() {
 
                   <div className="">
                     <object
+                      aria-label="svg"
                       className="w-[51px]"
                       type="image/svg+xml"
                       data={"/svg/church.svg"}
@@ -191,10 +202,15 @@ export default function BlogPage() {
                       Buy A Plate
                     </h1>
 
-                    <Link className="group  relative" href="/donate">
+                    <Link
+                      aria-label="donate page"
+                      className="group  relative"
+                      href="/donate"
+                    >
                       <p className="mt-[15px] flex items-center text-[#F25353]">
                         <span className="w-[0px] block transition-all  duration-[0.1s] group-hover:w-[24px]"></span>
                         <object
+                          aria-label="svg"
                           className="transition-all pointer-events-none absolute  duration-[0.1s] ease-[ease-in-out]  w-[24px] group-hover:translate-x-[0px]
               group-hover:opacity-[1] opacity-[0] translate-x-[-15px] h-[24px]"
                           type="image/svg+xml"
