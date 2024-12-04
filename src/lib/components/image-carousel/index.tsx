@@ -39,7 +39,7 @@ export default function ImageCarousel() {
           <div className="embla__slide h-full flex-[0_0_100%] min-[760px]:flex-[0_0_35%]">
             <Image
               src={"/image/image-three.png"}
-              alt="Cover Image"
+              alt="Image of a child in need"
               className="h-full w-full filter   object-cover"
               width={2740}
               height={2740}
@@ -50,7 +50,7 @@ export default function ImageCarousel() {
             {" "}
             <Image
               src={"/image/image-one.png"}
-              alt="Cover Image"
+              alt="Image of a child in need"
               className="h-full w-full filter    object-cover"
               width={2740}
               height={2740}
@@ -60,7 +60,7 @@ export default function ImageCarousel() {
           <div className="embla__slide flex-[0_0_100%] min-[760px]:flex-[0_0_35%]">
             <Image
               src={"/image/image-two.png"}
-              alt="Cover Image"
+              alt="Image of a child in need"
               className="h-full w-full filter   object-cover"
               width={2740}
               height={2740}
@@ -70,7 +70,7 @@ export default function ImageCarousel() {
           <div className="embla__slide flex-[0_0_100%] min-[760px]:flex-[0_0_35%]">
             <Image
               src={"/image/image-four.png"}
-              alt="Cover Image"
+              alt="Image of a child in need"
               className="h-full w-full filter \  object-cover"
               width={2740}
               height={2740}

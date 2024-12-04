@@ -120,7 +120,7 @@ w-full
                       >
                         <Image
                           src={blog.imageURL}
-                          alt="Cover Image"
+                          alt="blog images"
                           className="object-cover w-full h-full filter"
                           width={2740}
                           height={2740}

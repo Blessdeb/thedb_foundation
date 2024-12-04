@@ -73,7 +73,7 @@ export default function BlogPage() {
             <div className="w-full mt-[3rem] min-[1093px]:h-[690px] h-[450px] p-3 shadow-[2px_6px_27px_-6px_rgba(0,0,0,0.3)] bg-white">
               <Image
                 src={blog.imageURL}
-                alt="Cover Image"
+                alt="Blog cover Image"
                 className="filter object-cover w-full h-full"
                 width={2740}
                 height={2740}

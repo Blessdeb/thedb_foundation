@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title:
     "Deborah Bless Foundation - EMPOWERING LIVES, FIGHTING MALNUTRITION, REDUCING CHILD MORTALITY",
   description:
-    "Our mission is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive. Whether it’s reducing infant mortality, supporting vocational training, or spreading the message of Jesus Christ and His love, our programs aim to inspire change that lasts",
+    "Our mission at The Deborah Bless Foundation is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive. Whether it’s reducing infant mortality, supporting vocational training, or spreading the message of Jesus Christ and His love, our programs aim to inspire change that lasts",
   openGraph: {
     title:
       "Deborah Bless Foundation - EMPOWERING LIVES, FIGHTING MALNUTRITION, REDUCING CHILD MORTALITY",
     description:
-      "Our mission is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive. Whether it’s reducing infant mortality, supporting vocational training, or spreading the message of Jesus Christ and His love, our programs aim to inspire change that lasts",
+      "Our mission at The Deborah Bless Foundation is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive. Whether it’s reducing infant mortality, supporting vocational training, or spreading the message of Jesus Christ and His love, our programs aim to inspire change that lasts",
     url: "https://www.deborahblessfoundation.com/",
     type: "website",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title:
       "Deborah Bless Foundation - EMPOWERING LIVES, FIGHTING MALNUTRITION, REDUCING CHILD MORTALITY",
     description:
-      "Our mission is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive. Whether it’s reducing infant mortality, supporting vocational training, or spreading the message of Jesus Christ and His love, our programs aim to inspire change that lasts",
+      "Our mission at The Deborah Bless Foundation is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive. Whether it’s reducing infant mortality, supporting vocational training, or spreading the message of Jesus Christ and His love, our programs aim to inspire change that lasts",
     images: [
       {
         url: "https://res.cloudinary.com/dci2ylcbr/image/upload/v1733223246/twitter-card_r8sjud.png",
@@ -49,8 +49,38 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Deborah Bless Foundation",
+    url: "https://www.deborahblessfoundation.com",
+    logo: "https://res.cloudinary.com/dci2ylcbr/image/upload/v1733223246/twitter-card_r8sjud.png",
+    description:
+      "Our mission at The Deborah Bless Foundation is to provide, nurture, and cater to those in need, ensuring that every child has the chance to thrive.",
+    sameAs: [
+      "https://www.facebook.com/yourpage",
+      "https://www.twitter.com/yourpage",
+      "https://www.instagram.com/yourpage",
+    ],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+1234567890",
+        contactType: "Customer Support",
+        areaServed: "Global",
+        availableLanguage: ["English"],
+      },
+    ],
+  };
+
   return (
     <html lang="en" className={`${poppins.variable}`} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className="font-poppins">{children}</body>
     </html>
   );
