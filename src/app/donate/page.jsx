@@ -62,7 +62,7 @@ export default function DonatePage() {
                   <div className="w-full flex justify-center items-center h-[70px] bg-[#F25353]">
                     <Image
                       src={"/image/db-logo-white.png"}
-                      alt="Cover Image"
+                      alt="thedb white logo version"
                       className="object-cover w-[80px] filter"
                       width={2740}
                       height={2740}
@@ -103,7 +103,7 @@ export default function DonatePage() {
               >
                 <Image
                   src={"/image/image-three.png"}
-                  alt="Cover Image"
+                  alt="an image of a child"
                   className="object-cover w-full h-full filter"
                   width={2740}
                   height={2740}
